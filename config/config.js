@@ -1,6 +1,6 @@
 module.exports = {
   development: {
-    username: 'kai',
+    username: '<YOUR_USER_NAME>',
     password: null,
     database: 'react_ecom_development',
     host: '127.0.0.1',

@@ -12,9 +12,7 @@ export default function App() {
 
   const addToCart = (item, quantity) => {
     const cartItem = { quantity, ...item };
-    // Use callback to access most recent prev state.
-    // https://reactjs.org/docs/hooks-reference.html#functional-updates
-    setCart((prevCart) => [cartItem, ...prevCart]);
+    setCart([cartItem, ...cart]);
   };
 
   const setItemDetail = (itemIndex) => {

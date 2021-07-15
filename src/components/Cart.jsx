@@ -11,7 +11,8 @@ export default function Cart({ items, emptyCart }) {
           <div className="cart">
             <h2>Thank You for your order 😄</h2>
             <h4>
-              your order id is:
+              Your order ID is:
+              {' '}
               {orderId}
             </h4>
           </div>
@@ -53,8 +54,11 @@ export default function Cart({ items, emptyCart }) {
         {items.map((item) => (
           <div key={item.id}>
             {item.quantity}
+            {' '}
             |
+            {' '}
             {item.name}
+            {' '}
             $
             {item.price}
           </div>

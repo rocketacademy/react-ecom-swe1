@@ -8,11 +8,11 @@ import ItemDetail from './components/ItemDetail.jsx';
 export default function App() {
   const [items, setItems] = useState([]);
   const [cart, setCart] = useState([]);
-  const [selectedItemIndex, setSelectedItem] = useState();
+  const [selectedItemIndex, setSelectedItemIndex] = useState();
 
   const addToCart = (item, quantity) => {
     const cartItem = { quantity, ...item };
-    setCart([cartItem, ...cart]);
+    setCart((prevCart) => [cartItem, ...prevCart]);
   };
 
   const emptyCart = () => {
@@ -20,7 +20,7 @@ export default function App() {
   };
 
   const setItemDetail = (itemIndex) => {
-    setSelectedItem(itemIndex);
+    setSelectedItemIndex(itemIndex);
   };
 
   const getItems = () => {

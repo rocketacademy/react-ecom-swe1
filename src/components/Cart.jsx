@@ -22,6 +22,7 @@ export default function Cart({ items }) {
             {item.quantity}
             {' '}
             |
+            {' '}
             {item.name}
             {' '}
             $
